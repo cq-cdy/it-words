@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/addFragment">
+
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.example.ITwords.WordsFragment"
+        android:label="我的收藏"
+
+        tools:layout="@layout/fragment_words">
+        <action
+            android:id="@+id/action_wordsFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.ITwords.AddFragment"
+        android:label="主  页>"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment"
+            app:popUpTo="@+id/navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

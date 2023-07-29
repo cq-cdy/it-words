@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllWordTestFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_percent="0.07"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="201dp"
+                    app:layout_constraintGuide_percent="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/mytesttext_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#9FDFFF"
+                    android:gravity="center"
+                    android:text="自主练习"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline33"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="180秒挑战"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline33"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline34"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_end="482dp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/currentName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_zhengfangxing"
+                    android:textAlignment="center"
+                    android:textColor="#54BDFD"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view"
+                    tools:text="当前用户:cdy" />
+
+                <TextView
+                    android:id="@+id/high_score_180"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_zhengfangxing"
+                    android:text="最高纪录："
+                    android:textAlignment="center"
+                    android:textColor="#5BC7FF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/currentName"
+                    tools:text="最高纪录：999" />
+
+                <TextView
+                    android:id="@+id/time_180"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_zhengfangxing"
+                    android:gravity="center"
+                    android:text="倒计时：180s"
+                    android:textColor="#868686"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/high_score_180" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="365dp"
+                    app:layout_constraintGuide_percent="0.45" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="填写完整单词"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toStartOf="@+id/go_on"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout12" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="325dp"
+                    app:layout_constraintGuide_percent="0.75" />
+
+                <Button
+                    android:id="@+id/go_on"
+                    android:layout_width="66dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="提交"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout12" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="397dp"
+                    app:layout_constraintGuide_percent="0.52" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout12"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:background="@android:color/background_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/time_180">
+
+                    <Button
+                        android:id="@+id/begin_180"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="开 始 挑 战"
+                        android:textColor="@android:color/background_light"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.1978022"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/daangongbu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案公布"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                        app:layout_constraintStart_toStartOf="@+id/guideline42"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.25" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintGuide_begin="153dp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintGuide_percent="0.5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/currentScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前得分:0"
+                        android:textColor="#FF5722"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline42"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.75" />
+
+                    <TextView
+                        android:id="@+id/questionWord"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline44"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline42"
+                        app:layout_constraintTop_toTopOf="@+id/guideline41" />
+
+                    <TextView
+                        android:id="@+id/questionMean"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#E91E63"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline43"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline42"
+                        app:layout_constraintTop_toTopOf="@+id/guideline44" />
+
+                    <TextView
+                        android:id="@+id/targetWord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center"
+                        android:text="目标单词:"
+                        app:layout_constraintBottom_toBottomOf="@+id/questionWord"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline42"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/questionWord" />
+
+                    <TextView
+                        android:id="@+id/targetMean"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="目标释义:"
+                        app:layout_constraintBottom_toBottomOf="@+id/questionMean"
+                        app:layout_constraintEnd_toEndOf="@+id/targetWord"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/targetWord"
+                        app:layout_constraintTop_toTopOf="@+id/questionMean"
+                        app:layout_constraintVertical_bias="0.692" />
+
+                    <TextView
+                        android:id="@+id/newScore_180"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="新记录！！！"
+                        android:textColor="#43FF4A"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline45"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.07"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="1dp"
+                    android:text="TextView"
+                    app:layout_constraintStart_toEndOf="@+id/currentName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorAccent"
+                    android:text="180秒挑战测试排行榜"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="187dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView47"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/no1_180"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                        app:layout_constraintStart_toStartOf="@+id/guideline14"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/no2_180"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#0E0D0D"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                        app:layout_constraintStart_toStartOf="@+id/guideline14"
+                        app:layout_constraintTop_toBottomOf="@+id/no1_180" />
+
+                    <TextView
+                        android:id="@+id/no3_180"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                        app:layout_constraintStart_toStartOf="@+id/guideline14"
+                        app:layout_constraintTop_toBottomOf="@+id/no2_180" />
+
+                    <TextView
+                        android:id="@+id/no4_180"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#0E0E0E"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                        app:layout_constraintStart_toStartOf="@+id/guideline14"
+                        app:layout_constraintTop_toBottomOf="@+id/no3_180" />
+
+                    <TextView
+                        android:id="@+id/no5_180"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#0E0E0E"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                        app:layout_constraintStart_toStartOf="@+id/guideline14"
+                        app:layout_constraintTop_toBottomOf="@+id/no4_180" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar4"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/no4_180"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/no1_180" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="—挑战过程中若强制退出分数将无法上传—"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/no5_180" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.2" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.8004866" />
+
+                    <TextView
+                        android:id="@+id/no_1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="NO.1"
+                        android:textColor="#070707"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no1_180"
+                        app:layout_constraintEnd_toStartOf="@+id/no1_180"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/no1_180" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="NO.2"
+                        android:textColor="#0C0C0C"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no2_180"
+                        app:layout_constraintEnd_toStartOf="@+id/no2_180"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/no2_180" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="NO.3"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no3_180"
+                        app:layout_constraintEnd_toStartOf="@+id/no3_180"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/no3_180" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="NO.4"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no4_180"
+                        app:layout_constraintEnd_toStartOf="@+id/no4_180"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/no4_180" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="NO.5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no5_180"
+                        app:layout_constraintEnd_toStartOf="@+id/no5_180"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/no5_180" />
+
+                    <TextView
+                        android:id="@+id/no_1_sc"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FF0E00"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no1_180"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/no1_180"
+                        app:layout_constraintTop_toTopOf="@+id/no1_180"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/no_2_sc"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no2_180"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/no2_180"
+                        app:layout_constraintTop_toTopOf="@+id/no2_180" />
+
+                    <TextView
+                        android:id="@+id/no_3_sc"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no3_180"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/no3_180"
+                        app:layout_constraintTop_toTopOf="@+id/no3_180" />
+
+                    <TextView
+                        android:id="@+id/no_4_sc"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no4_180"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/no4_180"
+                        app:layout_constraintTop_toTopOf="@+id/no4_180" />
+
+                    <TextView
+                        android:id="@+id/no_5_sc"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edit_zhengfangxing"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/no5_180"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/no5_180"
+                        app:layout_constraintTop_toTopOf="@+id/no5_180" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="25dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/naozhong"
+                    app:layout_constraintBottom_toBottomOf="@+id/time_180"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/time_180" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="28dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/tiaozhanzhe"
+                    app:layout_constraintBottom_toBottomOf="@+id/currentName"
+                    app:layout_constraintStart_toStartOf="@+id/currentName"
+                    app:layout_constraintTop_toTopOf="@+id/currentName" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="24dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/zuigaojilu"
+                    app:layout_constraintBottom_toBottomOf="@+id/high_score_180"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/high_score_180" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="100dp"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="2dp"
+                    android:background="#3EB5FF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="限时挑战"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline33" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="100dp"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="2dp"
+                    android:background="#4FBCFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="挑战排行"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_word_graph"
+    app:startDestination="@+id/myWordTestFragment">
+
+    <fragment
+        android:id="@+id/myWordTestFragment"
+        android:name="com.example.ITwords.MyWordTestFragment"
+        android:label="fragment_my_word_test"
+        tools:layout="@layout/fragment_my_word_test">
+        <action
+            android:id="@+id/action_myWordTestFragment_to_allWordTestFragment"
+            app:destination="@id/allWordTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allWordTestFragment"
+        android:name="com.example.ITwords.AllWordTestFragment"
+        android:label="fragment_all_word_test"
+        tools:layout="@layout/fragment_all_word_test">
+        <action
+            android:id="@+id/action_allWordTestFragment_to_myWordTestFragment"
+            app:destination="@id/myWordTestFragment" />
+    </fragment>
+</navigation>

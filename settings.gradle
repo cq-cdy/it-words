@@ -1,0 +1,2 @@
+include ':app', ':ocr_ui'
+rootProject.name='roombasic'

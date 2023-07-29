@@ -1,0 +1,73 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.baidu.ocr.ui.test" >
+4
+5    <uses-sdk
+5-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:5:5-74
+6        android:minSdkVersion="19"
+6-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:5:15-41
+7        android:targetSdkVersion="30" />
+7-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:5:42-71
+8
+9    <instrumentation
+9-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:11:5-15:71
+10        android:name="android.support.test.runner.AndroidJUnitRunner"
+10-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:11:22-83
+11        android:functionalTest="false"
+11-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:14:22-52
+12        android:handleProfiling="false"
+12-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:13:22-53
+13        android:label="Tests for com.baidu.ocr.ui.test"
+13-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:15:22-69
+14        android:targetPackage="com.baidu.ocr.ui.test" />
+14-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:12:22-67
+15
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-65
+16-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-62
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-80
+17-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-77
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-81
+18-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-78
+19
+20    <uses-feature android:name="android.hardware.camera2.full" />
+20-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-66
+20-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:19-63
+21    <uses-feature android:name="android.hardware.camera" />
+21-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-60
+21-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:19-57
+22    <uses-feature android:name="android.hardware.camera.autofocus" />
+22-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-70
+22-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:19-67
+23
+24    <application
+24-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:7:5-9:19
+25        android:allowBackup="true"
+25-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.0.0] C:\Users\10447\.gradle\caches\transforms-2\files-2.1\16eef862f6a392eedad745d369e74cef\core-1.0.0\AndroidManifest.xml:22:18-86
+27        android:debuggable="true"
+27-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:7:18-43
+28        android:supportsRtl="true"
+28-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-35
+29        android:theme="@style/AppTheme"
+29-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-40
+30        android:vmSafeMode="true" >
+30-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-34
+31        <uses-library android:name="android.test.runner" />
+31-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:8:9-60
+31-->H:\roombasic\ocr_ui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2200073311952864233.xml:8:23-57
+32
+33        <activity
+33-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-28:80
+34            android:name="com.baidu.ocr.ui.camera.CameraActivity"
+34-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-66
+35            android:configChanges="screenSize|orientation"
+35-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-59
+36            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+36-->[__tested_artifact__::ocr_ui] H:\roombasic\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-77
+37    </application>
+38
+39</manifest>
