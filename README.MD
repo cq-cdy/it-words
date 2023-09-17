@@ -41,7 +41,8 @@
 
 ------------
 ## 一些界面：
-<img src="./gradle/0.png" title="Logo" width="320" /> 
+<img src="./gradle/0.png" title="Logo" width="300" /> 
+
 ![](./gradle/9.png)
 ![](./gradle/7.png)
 ![](./gradle/8.png)
